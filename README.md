@@ -1,6 +1,6 @@
 # saucectl cypress example
 
-Example running saucectl with cypress...
+Example running saucectl with cypress..
 
 **Note**: If all you want is to publish your cypress test results to Sauce Labs (but not run on Sauce Labs), please check out our [cypress reporting plugin](https://github.com/saucelabs/sauce-cypress-plugin)!
 
