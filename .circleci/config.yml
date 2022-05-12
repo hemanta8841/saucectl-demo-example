@@ -1,0 +1,19 @@
+version: 2.1
+orbs:
+  saucectl: saucelabs/saucectl-run@1.0.0
+
+jobs:
+  test-cypress:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 20.10.2
+      - saucectl/saucectl-run
+
+workflows:
+  version: 2
+  default_workflow:
+    jobs:
+      - test-cypress
