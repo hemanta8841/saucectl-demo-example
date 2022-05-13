@@ -15,5 +15,5 @@ Given('I open amex home page', () => {
 });
 
 Then(`I should see correct title`, () => {
-  cy.title().contains('American Express')
+  cy.title().should('include','American Express')
 });
